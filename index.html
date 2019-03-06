@@ -1,0 +1,345 @@
+<html>
+<head>
+<title>Руководство</title>
+</head>
+<body>
+<pre>
+###############################################################################
+#                    Краткое руководство по R4i Gold                          #
+###############################################################################
+
+Еще раз с праздником ... Воу, ты это все-таки прочтешь!
+Ооооочень надеюсь, что тебе понравится. Я старался, правда.
+
+Даже оформил в ретро-стиле :D
+
++-----------------------------------------------------------------------------+
+| TLDR;                                                                       |
++-----------------------------------------------------------------------------+
+| Выдавить стекло, выхватить ... упс, не то                                   |
+| Нужно вставить картридж в слот картриджей для DS и играть в Зельду :)       |
++-----------------------------------------------------------------------------+
+
+Далее следует довольно нудное руководство и описание действий, на случай войны,
+всеобщего отключения гугла, интернета и моей скоропостижной кончины - разом
+
+###############################################################################
+
+
+
++-----------------------------------------------------------------------------+
+| Оглавление                                                                  |
++-----------------------------------------------------------------------------+
+|                                                                             |
+|   00. Предисловие автора и игры                                             |
+|   01. Как это работает?                                                     |
+|   02. Где взять еще игр?                                                    |
+|   03. GBA все равно лучше!                                                  |
+|   04. Вряд ли тебе это понадобится                                          |
+|                                                                             |
++-----------------------------------------------------------------------------+
+
+
+
++----+------------------------------------------------------------------------+
+| 00 | Предисловие автора и игры                                              |
++----+------------------------------------------------------------------------+
+
+На карту памяти я уже вложил 8 образов игр. Остальное не стал, т.к. решил, что
+ты сама примешь решение, в какие игры играть и скачаешь нужное :)
+
+Список игр, уже установленных:
+- The Legend of Zelda - Phantom Hourglass (RUS)
+- The Legend of Zelda - Spirit Tracks (RUS)
+- Phoenix Wright - Ace Attorney (RUS)
+- Phoenix Wright Ace Attorney - Justice For All (RUS)
+- Phoenix Wright - Ace Attorney - Trials and Tribulations (USA)
+- Metroid Prime Hunters (RUS)
+- Dragon Quest IV - Chapters of the Chosen (RUS)
+- Mechanic Master (RUS)
+
+[!] Настоятельно советую поиграть в трилогию Phoenix Wright.
+К двум первым частям я нашел перевод, третью только на английском.
+Разумеется, если перевод покажется кривым - можно скачать на буржуйском:
+- nintendo.moy.su/load/phoenix_wright_ace_attorney/23-1-0-8238
+- nintendo.moy.su/load/phoenix_wright_ace_attorney_justice_for_all/23-1-0-3189
+
+Ну и разумеется, The Legend of Zelda. Целых два эксклюзива (во времена DS)
+Phantom Hourglass и Spirit Tracks. Причем вторая - прямое продолжение первой
+Английские версии, на случай крови из глаз от "Хирул":
+- nintendo.moy.su/load/24-1-0-52
+- nintendo.moy.su/load/the_legend_of_zelda_spirit_tracks/24-1-0-606
+
+Если захочется классического Mario:
+New Super Mario Bros
+- nintendo.moy.su/load/new_super_mario_bros/19-1-0-288
+
+Если захочется Mario в 3D:
+Super Mario 64 DS - полноценный ремейк для DS
+Но русская версия глючная и вылетает, поэтому вот ссылка на английскую:
+- nintendo.moy.su/load/super_mario_64/23-1-0-610
+
+Ну и почему бы не приобщиться к покемонам? Я вот тоже начал приобщаться.
+Как ты уже знаешь, все покемоны выходят в двух версиях. Если не фанат,
+то в принципе пофиг какую выбрать. Но, погуглить или дернуть Толю можно :)
+Я буду указывать одинаковые номера у одной серии:
+-------------------------------------------------------------------------------
+1 Pokemon HeartGold - полноценный ремейк с GBC на DS
+  - nintendo.moy.su/load/pokemon_heart_gold/24-1-0-579
+1 Pokemon SoulSilver - аналогично
+  - nintendo.moy.su/load/pokemon_soul_silver/24-1-0-329
+-------------------------------------------------------------------------------
+2 Pokemon Diamond
+  - romsmania.cc/roms/nintendo-ds/1015-pokemon-diamond-234555
+2 Pokemon Pearl
+  - nintendo.moy.su/load/24-1-0-37
+2.5 Pokemon Platinum - улучшенная версия первых двух
+  - romsmania.cc/roms/nintendo-ds/3541-pokemon-platinum-version-us-237082
+-------------------------------------------------------------------------------
+3 Pokemon White
+  - romsmania.cc/roms/nintendo-ds/5584-pokemon-white-version-239125
+3 Pokemon Black
+  - romsmania.cc/roms/nintendo-ds/5585-pokemon-black-version-239126
+-------------------------------------------------------------------------------
+4 Pokemon White 2
+  - romsmania.cc/roms/nintendo-ds/6150-pokemon-white-version-2-friends-239693
+4 Pokemon Black 2
+  - romsmania.cc/roms/nintendo-ds/6149-pokemon-black-version-2-friends-239692
+-------------------------------------------------------------------------------
+X Pokemon Mystery Dungeon - Explorers of Darkness - игра от лица покемонов
+ nintendo.moy.su/load/pokemon_mystery_dungeon_explorers_of_darkness/24-1-0-4323
+
+Лучшие аркадные гоночки на нинтендо-консолях всегда были мариокарт :)
+Mario Kart DS - не сильно отстает от своей версии для свитч, если на чистоту
+- nintendo.moy.su/load/26-1-0-38
+
+Одна из лучших пошаговых стратегий, до сих пор под нее все косят:
+Advance Wars - Dual Strike
+- nintendo.moy.su/load/advance_wars_dual_strike/20-1-0-4327
+
+Не знаю как ты к JRPG, но если нравится, то лучшая это:
+Chrono Trigger - полноценный ремейк оригинальной игры 95го года для DS
+- nintendo.moy.su/load/chrono_trigger/24-1-0-575
+
+Ну и еще примерно триллиард игр для DS, продолжение темы в пункте 02
+
+
+
++----+------------------------------------------------------------------------+
+| 01 | Как это работает?                                                      |
++----+------------------------------------------------------------------------+
+
+0) Взять MicroSD карту, отформатированную в FAT32
+   ----------------------------------------------
+   Должна подходить любая, но чтобы точно заработало я взял MicroSDHC на 4 Гб
+
+
+1) Скачать последнюю версию софта для картриджа
+   --------------------------------------------
+   Но я уже скачал самую последнюю версию (WOOD R4 V1.64 от 2013-11-08)
+   Вот отсюда: http://filetrip.net/dl?FhXOBrY7vI
+   Если вдруг затрешь или появится новая (да не, уже не появится),
+   то тебе нужно будет посетить: http://www.r4ids.cn/r4i-download-e.htm
+   и скачать там софт из пункта Newest WOOD R4 Kernel (выделен синим)
+
+
+2) Закинуть образы (они же ROM-ы) на карту (в отдельную папку или в корень)
+   ------------------------------------------------------------------------
+   В итоге должно выглядеть так:
+   #
+   |- __rpg
+   |- _DS_MENU.DAT
+   |- MyRoms
+      |- ...
+   [!] Образы должны быть в формате .nds
+
+
+3) Вставить MicroSD в картридж (R4i Gold) и запустить DS/DS-Lite
+   -------------------------------------------------------------
+   Должна загрузиться визуальная оболочка в виде файлового менеджера, там
+   уже выбираем нужный образ (файл .nds) и тыкаем A - должна взлететь игра.
+
+
+
+
++----+------------------------------------------------------------------------+
+| 02 | Где взять еще игр?                                                     |
++----+------------------------------------------------------------------------+
+
+Библиотека игр для DS просто бесконечна. Более 2.5к тайтлов...
+
+Много образов на русском и английском есть тут:
+http://nintendo.moy.su/load/18
+
+Почти все образы всех времен, народов и консолей есть тут: romsmania.cc
+
+Обычно я просто гуглю "top games for Nintendo DS" и выбираю из топа лучшее, а
+затем иду снова гуглю "GAME_TITLE DS rom"...
+
+Ну или можно посмотреть топ игр и приложений по версии Metacritic:
+https://www.metacritic.com/browse/games/score/metascore/all/ds/filtered
+
+    Grand Theft Auto: Chinatown Wars
+    Flipnote Studio
+    Chrono Trigger
+    Mario Kart DS
+    Mario & Luigi: Bowser's Inside Story
+    The Legend of Zelda: Phantom Hourglass
+    Advance Wars: Dual Strike
+    Castlevania: Dawn of Sorrow
+    New Super Mario Bros.
+    Meteos
+    The World Ends with You
+    Pokemon White Version
+    Dragon Quest IX: Sentinels of the Starry Skies
+    Pokemon SoulSilver Version
+    Elite Beat Agents
+    The Legend of Zelda: Spirit Tracks
+    Pokemon HeartGold Version
+    Pokemon Black Version
+    Kirby: Canvas Curse
+    Might & Magic: Clash of Heroes
+    Mario & Luigi: Partners in Time
+    Planet Puzzle League
+    Animal Crossing: Wild World
+    Professor Layton and the Unwound Future
+    Advance Wars: Days of Ruin
+    Radiant Historia
+    Shantae: Risky's Revenge
+    Castlevania: Portrait of Ruin
+    Metroid Prime: Hunters
+    Pokemon Pearl Version
+    The Legend of Zelda: Four Swords Anniversary Edition
+    Professor Layton and the Curious Village
+    Super Mario 64 DS
+    Pokemon Diamond Version
+    Final Fantasy IV
+    Castlevania: Order of Ecclesia
+    Space Invaders Extreme
+    Peggle: Dual Shot
+    Tetris DS
+    Shin Megami Tensei: Devil Survivor
+    Professor Layton and the Diabolical Box
+    Dark Void Zero
+    Tony Hawk's American Sk8land
+    Dragon Quest V: Hand of the Heavenly Bride
+    Ghost Trick: Phantom Detective
+    Bangai-O Spirits
+    Bleach: The Blade of Fate
+    Picross DS
+    Clubhouse Games
+    Picross 3D
+    Mighty Flip Champs!
+    Nintendogs: Chihuahua & Friends
+    Art Style: PiCTOBiTS
+    Professor Layton and the Last Specter
+    Nintendogs: Lab & Friends
+    Ninja Gaiden: Dragon Sword
+    Dragon Quest Heroes: Rocket Slime
+    Contra 4
+    Rhythm Heaven
+    Nintendogs: Dalmatian & Friends
+    Kirby Mass Attack
+    Dragon Quest Wars
+    Nintendogs: Dachshund & Friends
+    Pokemon Platinum Version
+    WarioWare D.I.Y.
+    KORG DS-10 Synthesizer
+    Dawn of Discovery
+    Mario vs. Donkey Kong: Minis March Again!
+    Disgaea DS
+    Lunar Knights
+    Viva Pinata: Pocket Paradise
+    Henry Hatsworth in the Puzzling Adventure
+    Okamiden
+    Space Invaders Extreme 2
+    Sonic Rush
+    N+
+    Etrian Odyssey II: Heroes of Lagaard
+    Puzzle Quest: Challenge of the Warlords
+    Nine Hours, Nine Persons, Nine Doors
+    Bleach: Dark Souls
+    Starship Defense
+    KORG DS-10 PLUS
+    WarioWare: Touched!
+    Mighty Milky Way
+    Trauma Center: Under the Knife
+    Fire Emblem: Shadow Dragon
+    Phoenix Wright: Ace Attorney
+    Personal Trainer: Cooking
+    Tiger Woods PGA Tour 08
+    Yoshi's Island DS
+    Plants vs. Zombies
+    Final Fantasy XII: Revenant Wings
+    Super Scribblenauts
+    Worms: Open Warfare 2
+    Phoenix Wright: Ace Attorney - Trials and Tribulations
+    Sid Meier's Civilization Revolution
+    Dragon Quest IV: Chapters of the Chosen
+    Pokemon Black Version 2
+    Age of Empires: The Age of Kings
+    Final Fantasy Tactics A2: Grimoire of the Rift
+    ...
+
+
+
++----+------------------------------------------------------------------------+
+| 03 | GBA все равно лучше!                                                   |
++----+------------------------------------------------------------------------+
+
+Ну ладно. Тоже не беда. Даже на этом картридже есть возможность поиграть в
+GBA-образы. Правда ... работает кривенько и не со всеми играми. И проверить
+я все равно никак не мог, поэтому оставил это за кадром. Если захочешь 
+экспериментов - пиши мне, будем разбираться.
+
+Если коротко - то есть приложение-эмулятор формата .nds, которое запускается и
+воспроизводит образы с той же SD-карты, которая стоит в картридже R4i Gold
+
+Захочешь - можешь сама почитать тут:
+https://wiki.gbatemp.net/wiki/GBARunner2
+
+Так как это не аппаратная эмуляция, которую DS-ки вообще-то поддерживают, но
+увы и ах, только через GBA-слот, тоооо ... работает реально не очень.
+
+Хотя надо тестить.
+
+Есть и другой, более специализированный для DS-ок эмулятор:
+http://www.mediafire.com/file/00i742a9652cb9q/gbaemu4ds+alpha+2+fix4.zip
+
+
+
++----+------------------------------------------------------------------------+
+| 04 | Вряд ли тебе это понадобится                                           |
++----+------------------------------------------------------------------------+
+
+У картриджа на плате есть переключатель. Сейчас он установлен в положение D,
+т.е. работает в режиме flash-карты, при запуске картриджа из меню консоли -
+происходит загрузка системного меню (оно же - визуальная оболчка) Wood R4.
+
+Ядро этого системного меню как раз и лежит в папке __rpg и файле _DS_MENU.DAT
+в корне micro SD карты. НАСТОЯТЕЛЬНО не советую их удалять :)
+
+Но есть и второе положение - N. Называется режим ntrboot. И используется он
+только для прошивки консолей DSi, 2DS и 3DS. Хочу отметить, что консоли
+New Nintendo 2DS и New Nintendo 3DS прекрасно прошиваются и без него.
+В этом режиме при запуске картриджа происходит загрузка целого набора файлов
+кастомной прошивки и начинается процесс установки.
+Больше об этом можно прочтитать здесь: http://www.r4ids.cn/r4ids-e.htm
+
+Также, благодаря замечательным программистам-геймерам-хакерам у нас есть
+прекрасная возможность скачать DevKitPRO библиотеки, позволяющие разрабатыать
+собственные приложения для кастомных прошивок GBA/DS/3DS/Wii/WiiU/Switch.
+
+Для Nintendo DS парень написал руководство на GitHub-е:
+https://github.com/jdriselvato/NDS-Development
+
+Т.е. если тебе очень захочется чего-то, чего еще нет на DS - напиши сама :D
+
+
+
+###############################################################################
+#                               © МАК, 2019 г.                                #
+###############################################################################
+</pre>
+</body>
+</html>
